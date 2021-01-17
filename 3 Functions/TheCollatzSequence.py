@@ -9,6 +9,7 @@ def collatz(number):
         # if number is odd
         else:
             return 3 * number + 1
+    # Error handling
     except ValueError:
         print("Number is noninteger")
 
