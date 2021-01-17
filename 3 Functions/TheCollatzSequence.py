@@ -1,6 +1,3 @@
-from typing import Sequence
-
-
 # Chapter 3
 # Project: the Collatz Sequence
 
