@@ -27,10 +27,12 @@ def generateChessListAndBoard():
     validChessDic = {"queen": 1, "king": 1, 'pawn': 8,
                      'knight': 2, 'bishop': 2, 'rook': 2}
 
+    # generate list of all piece bking, wking ...
     for piece in validChessDic:
         for amount in range(validChessDic[piece]):
             allPieces.append("w"+piece)
             allPieces.append("b"+piece)
+    # generate list of all spaces 1a, 1b ...
     for letter in validBoardDic:
         for i in range(validBoardDic[letter]):
             allSpaces.append("{}{}".format(i+1, letter))
