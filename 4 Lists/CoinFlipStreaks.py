@@ -6,7 +6,7 @@ numberOfStreaks = 0
 streaks = 0
 lastFlip = None
 ListOfValues = []
-    # Code that creates a list of 100 'heads' or 'tails' values.
+# Code that creates a list of 100 'heads' or 'tails' values.
 for experimentNumber in range(10000):
     Flip = random.randint(0, 1)
     if(Flip == 0):
@@ -15,8 +15,11 @@ for experimentNumber in range(10000):
         ListOfValues.append("H")
 # Code that checks if there is a streak of 6 heads or tails in a row.
 for value in ListOfValues:
+    # If current flip is same as lastone
+    # add 1 to streaks
     if(value == lastFlip):
         streaks += 1
+        # if streaks = 6
         if(streaks == 6):
             numberOfStreaks += 1
             streaks = 0
